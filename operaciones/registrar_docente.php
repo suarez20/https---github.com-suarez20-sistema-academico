@@ -37,7 +37,7 @@ if ($c_r_b_estudiante == 0) {//validamos que no haya registros en la base de dat
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al registrar usuario');
+			alert('Errorr al registrar usuario');
 			window.history.back();
 			</script>
 			";
