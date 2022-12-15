@@ -2,7 +2,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php"><i><img src="img/logo iestp.png" alt="..." class="img-circle profile_img"></i> <span></span></a>
+              <a href="index.php"><i><img src="img/.png" alt="..." class="img-circle profile_img"></i> <span></span></a>
             </div>
             <div class="clearfix"></div>
              <?php
