@@ -44,7 +44,7 @@ include "include/verificar_sesion.php";
                     <h2>Calificaciones</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="estudiante.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroCalificaciones.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -63,7 +63,7 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_calificacion = mostrarCalificacion($conexion);
+                        $b_calificacion = mostrarCalificaciones($conexion);
                         while ($res_b_calificacion = mysqli_fetch_array($b_calificacion)) {
                         ?>
                         <tr>
@@ -72,8 +72,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_calificacion['nro_calificacion'];  ?></td>
                           <td><?php echo $res_b_calificacion['calificacion']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_calificacion['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_calificacion['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarCalificaciones.php?id=<?php echo $res_b_calificacion['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarCalificaciones.php?id=<?php echo $res_b_calificacion['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

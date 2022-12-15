@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Crear Usuario | </title>
+    
 
     <!-- Bootstrap -->
     <link href="Gentella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +31,8 @@
       <div class="login_wrapper">
 
           <section class="login_content">
-            <form action="operaciones/registrar_usuariod.php" method="POST">
+          <img width="150px" src="Gentella/img/logo iestp.png" alt="">
+            <form action="OperacionRegistrar/RegistrarUsuarioInicio.php" method="POST">
               <h1>Crear Cuenta</h1>
               <div>
                 <input type="text" class="form-control" name="docente" placeholder="docente" required="" />
@@ -57,8 +59,8 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                <h1><i ></i> <b>I.E.S.T.P. "HUANTA"</b></h1>
+                    <h5><b>Bienvenido a la plataforma de Portafolio Docente, Inicie Sesion para acceder en modo Administrador</b></h5>
                 </div>
               </div>
             </form>

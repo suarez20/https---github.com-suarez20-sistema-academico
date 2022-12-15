@@ -11,7 +11,7 @@ include "include/verificar_sesion.php";
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gentelella Alela! | </title>
+    <title>Estudiantes! | </title>
     <!-- Bootstrap -->
     <link href="Gentella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -65,7 +65,7 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_estudiantes = buscarEstudiantes($conexion);
+                        $b_estudiantes = mostrarEstudiantes($conexion);
                         while ($res_b_estudiantes = mysqli_fetch_array($b_estudiantes)) {
                         ?>
                         <tr>
@@ -76,8 +76,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_estudiantes['id_programa_estudios']; ?></td>
                           <td><?php echo $res_b_estudiantes['id_semestre']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarEstudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarEstudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

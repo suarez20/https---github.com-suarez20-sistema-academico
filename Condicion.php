@@ -44,7 +44,7 @@ include "include/verificar_sesion.php";
                     <h2>Condiciones</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="estudiante.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroCondicion.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -70,8 +70,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_condicion['descripcion']; ?></td>
                           <td><?php echo $res_b_condicion['codigo'];  ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_condicion['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_condicion['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarCondicion.php?id=<?php echo $res_b_condicion['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarCondicion.php?id=<?php echo $res_b_condicion['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

@@ -11,7 +11,8 @@ include "include/verificar_sesion.php";
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gentelella Alela! | </title>
+    <title>Cargo! | </title>
+    <link rel="shortcut icon" href="img/logo iestp.png">
     <!-- Bootstrap -->
     <link href="Gentella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -44,7 +45,7 @@ include "include/verificar_sesion.php";
                     <h2>Cargos</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="estudiante.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroCargo.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -68,8 +69,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_cargo['id']; ?></td>
                           <td><?php echo $res_b_cargo['descripcion']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarCargo.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarCargo.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php
