@@ -43,7 +43,7 @@ include "include/verificar_sesion.php";
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Semestre</h2>
-                    <ul class="nav navbar-right">
+                    <ul hidden class="nav navbar-right">
                       <li>
                         <a href="RegistroSemestre.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
